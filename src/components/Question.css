@@ -1,0 +1,37 @@
+.btn
+{
+    background-color: #212529;
+    color: white;
+    width: 100%;
+    text-align: start;
+}
+.btn:hover
+{
+    color: white;   
+}
+.btn-primary
+{
+    background-color: #1e5dba;
+    color: #b7b7b8;
+}
+.btn-primary:hover
+{
+    color: #b7b7b8;
+    background-color: #1e5dba;
+}
+.col-8
+{
+    background-color: #3d3d3d;
+    border: 1px solid #5a5a5a;
+}
+p
+{
+    color: #60d600;
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h5
+{
+color: #212529;
+}

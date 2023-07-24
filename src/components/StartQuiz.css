@@ -1,0 +1,16 @@
+.btn-outline-dark
+{
+    border-radius: 7px;
+    color: #212529;
+    font-weight:bolder;
+}
+.btn-outline-dark:hover
+{
+color: #212529;
+}
+
+h1
+{
+    font-weight:bolder;
+    font-family:"serif";
+}
