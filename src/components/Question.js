@@ -72,9 +72,11 @@ function Question() {
                 {
                   const isCorrect = option === answer;
                   const isSelected = index === selectedAnswerIndex;
+                  // const answerIndex = options.indexOf(option === answer);
                   const buttonClassName = `btn d-block mb-3 ${
-                    isSelected ? (isCorrect ? 'bg-success' : 'bg-danger') : ""
-                  }`                  
+                    isSelected ? (isCorrect ? 'bg-success' : ('bg-danger')) : ""
+                  }`   
+                  // const buttonClassName2 = `btn d-block mb-3 ${answerIndex ? 'bg-success':"bg-danger"}`;
                   return(
                        <div className='mt-4' key={option}>
                           <button 
@@ -89,7 +91,7 @@ function Question() {
                   )
                 })
               }
-            <button className='btn btn-primary text-center font-weight-bold mb-3' onClick={handleOnClickNext}>Next Question</button>
+            <button className='btn btn-primary text-center font-weight-bold mb-3' onClick={handleOnClickNext} disabled={selectedAnswerIndex == null}>Next Question</button>
         </div>
     </div>
   </div>
