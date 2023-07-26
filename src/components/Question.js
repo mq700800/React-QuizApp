@@ -71,16 +71,14 @@ function Question() {
                 options.map((option , index)=>
                 {
                   const isCorrect = option === answer;
-                  const isSelected = index === selectedAnswerIndex;
-                  // const answerIndex = options.indexOf(option === answer);
-                  const buttonClassName = `btn d-block mb-3 ${
-                    isSelected ? (isCorrect ? 'bg-success' : ('bg-danger')) : ""
-                  }`   
-                  // const buttonClassName2 = `btn d-block mb-3 ${answerIndex ? 'bg-success':"bg-danger"}`;
+                  const isSelected = index === selectedAnswerIndex; 
                   return(
                        <div className='mt-4' key={option}>
                           <button 
-                              className={buttonClassName}
+                             style={{ backgroundColor : `${
+                              isSelected ? (isCorrect ? 'green' : 'red') : ""
+                            }`}}
+                              className={`btn d-block mb-3 ${selectedAnswerIndex && isCorrect && 'bg-success'}` }
                               onClick={() => handleOnAnswerSelect(option, index)}
                               disabled={selectedAnswerIndex !== null}
                             >
